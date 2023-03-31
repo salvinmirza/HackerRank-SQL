@@ -1,3 +1,9 @@
-<h2>Revising the Select Query I</h2>
+<h6>Revising the Select Query I</h6>
 SELECT * FROM CITY
 WHERE COUNTRYCODE = 'USA' AND POPULATION > 100000;
+
+<br />
+
+<h6>Revising the Select Query II</h6>
+SELECT NAME FROM CITY 
+WHERE COUNTRYCODE = 'USA' AND POPULATION > 120000;
