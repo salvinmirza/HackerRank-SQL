@@ -58,18 +58,32 @@ ORDER BY LENGTH(CITY) DESC, CITY
 LIMIT 1;
 
 <br />
-
 <h6>Weather Observation Station 6</h6>
 SELECT DISTINCT CITY FROM STATION
 WHERE CITY REGEXP '^[aeiou]';
 
+<br />
 ** Learning REGEXP **
 
 https://www.youtube.com/watch?v=KoltE-JUY0c&ab_channel=golearnfast
 
 <br />
-
 <h6>Weather Observation Station 7</h6>
 SELECT DISTINCT CITY FROM STATION
 WHERE CITY REGEXP '[aeiou]$';
+
+<br />
+<h6>Weather Observation Station 8</h6>
+SELECT DISTINCT CITY FROM STATION
+WHERE CITY REGEXP '^[aeiou].*[aeiou]$';
+
+<br />
+<h6>Weather Observation Station 9</h6>
+SELECT DISTINCT CITY FROM STATION
+WHERE NOT CITY REGEXP '^[aeiou]';
+
+<br />
+<h6>Weather Observation Station 10</h6>
+SELECT DISTINCT CITY FROM STATION
+WHERE NOT CITY REGEXP '[aeiou]$'
 
