@@ -1,19 +1,18 @@
+```sql
 <h6>Revising the Select Query I</h6>
 
-```sql
+
 SELECT * FROM CITY
 WHERE COUNTRYCODE = 'USA' AND POPULATION > 100000;
-```
 
 <br />
 
 <h6>Revising the Select Query II</h6>
-```sql
 
   SELECT NAME FROM CITY 
   WHERE COUNTRYCODE = 'USA' AND POPULATION > 120000;
   
-```
+
 <br />
 
 <h6>Select All</h6>
@@ -128,4 +127,4 @@ SELECT name FROM Employee
 WHERE salary > 2000 AND months < 10
 ORDER BY employee_id;
 
-
+```
