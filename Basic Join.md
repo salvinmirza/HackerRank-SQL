@@ -26,9 +26,9 @@
 
 ```sql
 
-  SELECT CITY.NAME
-  FROM CITY
+  SELECT Country.Continent, FLOOR(AVG(City.Population))
+  FROM City 
   INNER JOIN Country ON City.CountryCode = Country.Code
-  WHERE Country.Continent = 'Africa'
+  GROUP BY Country.Continent ;
 
 ```
