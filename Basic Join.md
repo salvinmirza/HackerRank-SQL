@@ -8,3 +8,14 @@
   WHERE Country.Continent = 'Asia'
 
 ```
+<br/>
+<h6>African Cities</h6>
+
+```sql
+
+  SELECT CITY.NAME
+  FROM CITY
+  INNER JOIN Country ON City.CountryCode = Country.Code
+  WHERE Country.Continent = 'Africa'
+
+```
