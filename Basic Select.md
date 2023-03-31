@@ -1,8 +1,8 @@
 <h6>Revising the Select Query I</h6>
-``` sql
+~~~mysql
 SELECT * FROM CITY
 WHERE COUNTRYCODE = 'USA' AND POPULATION > 100000;
-```
+~~~
 
 <br />
 
