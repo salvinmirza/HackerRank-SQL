@@ -1,3 +1,7 @@
+<h6> Learning Resource </h6>
+https://www.youtube.com/watch?v=9yeOJ0ZMUYw&ab_channel=Socratica
+<br />
+
 <h6>Population Census</h6>
 
 ```sql
