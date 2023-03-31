@@ -108,3 +108,18 @@ WHERE CITY REGEXP '^[^aeiou].*[^aeiou]$'
 SELECT Name FROM STUDENTS
 WHERE Marks > 75
 ORDER BY RIGHT(Name, 3), ID;
+
+<br />
+<h6>Employee Names</h6>
+SELECT name FROM Employee
+ORDER BY name;
+
+
+<br />
+<h6>Employee Salaries</h6>
+
+SELECT name FROM Employee
+WHERE salary > 2000 AND months < 10
+ORDER BY employee_id;
+
+
