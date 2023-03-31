@@ -57,3 +57,14 @@ SELECT CITY, LENGTH(CITY) FROM STATION
 ORDER BY LENGTH(CITY) DESC, CITY
 LIMIT 1;
 
+<br />
+<h6>Weather Observation Station 6</h6>
+SELECT DISTINCT CITY FROM STATION
+WHERE CITY REGEXP '^[aeiou]';
+
+** Learning REGEXP **
+https://www.youtube.com/watch?v=KoltE-JUY0c&ab_channel=golearnfast
+
+<br />
+
+
