@@ -90,12 +90,14 @@ WHERE NOT CITY REGEXP '[aeiou]$'
 <br />
 <h6>Weather Observation Station 11</h6>
 <h7>Query the list of CITY names from STATION that either do not start with vowels or do not end with vowels. Your result cannot contain duplicates.</h7>
+
 SELECT DISTINCT CITY FROM STATION 
 WHERE NOT CITY REGEXP '^[aeiou].*[aeiou]$'; 
 
 <br />
 <h6>Weather Observation Station 12</h6>
 <h7> Query the list of CITY names from STATION that do not start with vowels and do not end with vowels. Your result cannot contain duplicates.</h7>
+
 SELECT DISTINCT CITY FROM STATION
 WHERE CITY REGEXP '^[^aeiou].*[^aeiou]$'
 
