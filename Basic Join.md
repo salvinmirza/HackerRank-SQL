@@ -8,7 +8,8 @@
   WHERE Country.Continent = 'Asia'
 
 ```
-<br/>
+<br />
+
 <h6>African Cities</h6>
 
 ```sql
