@@ -36,3 +36,16 @@ https://www.youtube.com/watch?v=9yeOJ0ZMUYw&ab_channel=Socratica
   GROUP BY Country.Continent ;
 
 ```
+
+<br />
+
+<h6>The Report</h6>
+
+```sql
+
+  SELECT IF(GRADES.GRADE>=8, STUDENTS.NAME, NULL),GRADES.GRADE, STUDENTS.MARKS
+  FROM GRADES, STUDENTS
+  WHERE STUDENTS.MARKS BETWEEN GRADES.MIN_MARK AND GRADES.MAX_MARK
+  ORDER BY GRADES.GRADE DESC, STUDENTS.NAME;
+
+```
