@@ -90,15 +90,21 @@ WHERE NOT CITY REGEXP '[aeiou]$'
 <br />
 <h6>Weather Observation Station 11</h6>
 <h7>Query the list of CITY names from STATION that either do not start with vowels or do not end with vowels. Your result cannot contain duplicates.</h7>
-
+<br />
 SELECT DISTINCT CITY FROM STATION 
 WHERE NOT CITY REGEXP '^[aeiou].*[aeiou]$'; 
 
 <br />
 <h6>Weather Observation Station 12</h6>
 <h7> Query the list of CITY names from STATION that do not start with vowels and do not end with vowels. Your result cannot contain duplicates.</h7>
-
+<br/>
 SELECT DISTINCT CITY FROM STATION
 WHERE CITY REGEXP '^[^aeiou].*[^aeiou]$'
 
-
+<br />
+<h6>Higher Than 75 Marks</h6>
+<h7>If two or more students both have names ending in the same last three characters (i.e.: Bobby, Robby, etc.), secondary sort them by ascending ID.</h7>
+<br />
+SELECT Name FROM STUDENTS
+WHERE Marks > 75
+ORDER BY RIGHT(Name, 3), ID;
