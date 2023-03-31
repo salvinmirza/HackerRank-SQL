@@ -20,3 +20,15 @@
   WHERE Country.Continent = 'Africa'
 
 ```
+<br />
+
+<h6>Average Population of Each Continent</h6>
+
+```sql
+
+  SELECT CITY.NAME
+  FROM CITY
+  INNER JOIN Country ON City.CountryCode = Country.Code
+  WHERE Country.Continent = 'Africa'
+
+```
