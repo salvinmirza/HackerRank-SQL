@@ -9,8 +9,10 @@ WHERE COUNTRYCODE = 'USA' AND POPULATION > 100000;
 
 <h6>Revising the Select Query II</h6>
 ```sql
+
   SELECT NAME FROM CITY 
   WHERE COUNTRYCODE = 'USA' AND POPULATION > 120000;
+  
 ```
 <br />
 
