@@ -72,7 +72,6 @@ https://www.youtube.com/watch?v=9yeOJ0ZMUYw&ab_channel=Socratica
       h.hacker_id
 
 ```
-Ollivander's Inventory
 
 <br />
 
