@@ -72,3 +72,26 @@ https://www.youtube.com/watch?v=9yeOJ0ZMUYw&ab_channel=Socratica
       h.hacker_id
 
 ```
+Ollivander's Inventory
+
+<br />
+
+<h6>Ollivander's Inventory</h6>
+
+```sql
+
+    SELECT
+      w.id, wp.age, w.coins_needed, w.power
+    FROM
+      Wands w JOIN Wands_Property wp ON w.code = wp.code
+    WHERE wp. is_evil=0 and w.coins_needed = (  SELECT MIN(coins_needed)
+                                                FROM Wands w1 JOIN Wands_Property wp1 ON w1.code=wp1.code
+                                                WHERE w1.power = w.power and wp1.age=wp.age)
+                                            
+    ORDER BY
+      w.power DESC,
+      wp.age DESC
+
+```
+
+
